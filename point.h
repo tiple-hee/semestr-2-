@@ -18,7 +18,7 @@ public:
     double getZ() const;
 
     /**
-     * @brief Проверка на равенство точек
+     * @brief Проверка на неравенство точек
      */
-    bool operator==(const Point& p) const;
+    bool operator!=(const Point& p) const;
 };
