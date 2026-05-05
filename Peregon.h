@@ -21,21 +21,20 @@ public:
      * * @param start Начальный пикет.
      * @param end Конечный пикет.
      */
-    Peregon(Piquet start, Piquet end);
+    Peregon(const Piquet start,const  Piquet end);
 
     /**
      * @brief Конструктор от двух вещественных значений (координаты в метрах).
      * * @param startMeters Начальная координата.
      * @param endMeters Конечная координата.
      */
-    Peregon(double startMeters, double endMeters);
-
+    Peregon(const double startMeters,const  double endMeters);
     /**
      * @brief Добавление нового немерного пикета на перегон.
      * Пикет добавляется в вектор и сортируется по положению (пикетажу).
      * * @param p Объект пикета.
      */
-    void addPiquet(Piquet p);
+    void addPiquet(const Piquet p);
 
     /**
      * @brief Расчет фактической длины перегона с учетом немерных пикетов.
