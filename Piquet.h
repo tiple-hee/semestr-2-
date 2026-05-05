@@ -27,7 +27,7 @@ public:
      * Автоматически переводит метры в номер пикета и смещение.
      * * @param meters Расстояние от начала координат в метрах.
      */
-    Piquet(double meters);
+    Piquet(const double meters);
 
     /**
      * @brief Конструктор с полным набором параметров.
@@ -35,7 +35,7 @@ public:
      * @param sh Смещение (в метрах).
      * @param len Длина пикета (по умолчанию для проверки стандарта).
      */
-    Piquet(int num, double sh, double len);
+    Piquet(const int num,const double sh,const double len);
 
     /**
      * @brief Получить абсолютную координату точки в метрах.
