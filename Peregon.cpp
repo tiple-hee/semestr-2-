@@ -1,6 +1,6 @@
 #include "Peregon.h"
 
-Peregon::Peregon(Piquet start, Piquet end)
+Peregon::Peregon(const Piquet& start, const Piquet& end)
 {
     if (start < end) {
         startPoint = start;
@@ -11,7 +11,7 @@ Peregon::Peregon(Piquet start, Piquet end)
     }
 }
 
-Peregon::Peregon(double startMeters, double endMeters)
+Peregon::Peregon(const double startMeters, const double endMeters)
 {
     Piquet p1(startMeters);
     Piquet p2(endMeters);
@@ -24,7 +24,7 @@ Peregon::Peregon(double startMeters, double endMeters)
     }
 }
 
-void Peregon::addPiquet(Piquet p)
+void Peregon::addPiquet(const Piquet p)
 {
     if (!p.isStandard) {
         badPiquets.push_back(p);
