@@ -4,7 +4,7 @@
 
 Piquet::Piquet() : number(0), shift(0.0), length(100.0), isStandard(true) {}
 
-Piquet::Piquet(double meters)
+Piquet::Piquet(const double meters)
 {
     number = (int)(meters / 100);
     shift = meters - number * 100;
@@ -16,7 +16,7 @@ Piquet::Piquet(double meters)
     isStandard = true;
 }
 
-Piquet::Piquet(int num, double sh, double len)
+Piquet::Piquet(const int num, const double sh, const double len)
 {
     number = num;
     shift = sh;
